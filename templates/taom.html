@@ -89,29 +89,33 @@
 <body style="text-align: center;">
     <h1>Taomlar Ro'yxati</h1>
     <h3><a href="{% url 'home' %}" style="text-decoration: none; color: #0056b3;">Bosh sahifa</a></h3>
-    <a href="{% url 'detail' %}" class="button" style="color: white; max-width: 50px;">
     <ul>
         <li>
+            <a href="{% url 'detail' %}">
             <img src="/media/hero-img.png" >
             <div class="taom-info">
                 <a href="{% url 'detail' %}" class="button" style="color: white; max-width: 50px;">Tarkibi</a>
-                <h2>taom.Nomi</h2>
-                <p>Narxi: 1200 so'm</p>
+                <a href="{% url 'detail' %}">
+                    <h2>Ovqat1</h2>
+                    <p>Narxi: 1200 so'm</p>
+                </a>
             </div>
-        </li>
-    </ul>
         </a>
-        <a href="{% url 'detail' %}" class="button" style="color: white; max-width: 50px;">
+        </li>
+    </ul>
     <ul>
         <li>
+            <a href="{% url 'detail' %}">
             <img src="/media/hero-img.png" >
             <div class="taom-info">
                 <a href="{% url 'detail' %}" class="button" style="color: white; max-width: 50px;">Tarkibi</a>
-                <h2>taom.Nomi</h2>
-                <p>Narxi: 1200 so'm</p>
+                <a href="{% url 'detail' %}">
+                    <h2>Ovqat2</h2>
+                    <p>Narxi: 1000 so'm</p>
+                </a>
             </div>
+        </a>
         </li>
     </ul>
-            </a>
 </body>
 </html>
