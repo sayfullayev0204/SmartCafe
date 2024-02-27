@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+</head>  
+<style>
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+/* Container styles */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styles */
+a img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Text overlay styles */
+.text-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 16px; /* Tekst shriftini kichiklashtirish */
+    font-weight: bold;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 22px; /* Tugma sarlavhasi shriftini kichiklashtirish */
+    margin-bottom: 10px;
+}
+
+/* Subheading styles */
+h3 {
+    font-size: 16px; /* Tugma osti sarlavhasi shriftini kichiklashtirish */
+    margin-bottom: 10px;
+    color: #555;
+}
+
+</style>  
+<body>
+    <div class="container"> <!-- Container div elementi -->
+        <a href="{% url 'taom' %}">
+            <img src="/media/hero-img.png" alt="">
+            <div class="text-overlay">Taomlar</div>
+        </a>
+        <a href="#">
+            <img src="/media/pngwing.com.png" style="height: 300px;" alt="">
+            <div class="text-overlay">Salatlar</div>
+        </a>
+        <a href="#">
+            <img src="/media/ichim.png" alt="">
+            <div class="text-overlay">Ichimliklar</div>
+        </a>
+    </div>
+</body>
+</html>
